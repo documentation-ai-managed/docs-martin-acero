@@ -1,0 +1,117 @@
+---
+title: Introduction to Martin Acero
+description: Discover Martin Acero, your default documentation space for organizing and managing project documentation with ease.
+---
+
+## Overview
+
+Martin Acero provides a centralized space to organize and manage all your project documentation. You create, edit, and collaborate on docs using an intuitive interface powered by MDX. Customize your space with themes, integrate APIs, and ensure consistent branding across all content.
+
+<Callout kind="tip">
+  Start by inviting team members to collaborate on your first documentation project.
+</Callout>
+
+## Key Features
+
+Martin Acero simplifies documentation workflows with powerful tools.
+
+<Columns cols={3}>
+  <Card title="Organized Spaces" icon="folder" href="/docs/spaces">
+    Group related docs into spaces for better project management and navigation.
+  </Card>
+  <Card title="MDX Support" icon="code" href="/docs/mdx">
+    Write rich docs with components, code blocks, and interactive elements.
+  </Card>
+  <Card title="Collaboration" icon="users" href="/docs/collaboration">
+    Real-time editing, comments, and version history keep teams aligned.
+  </Card>
+  <Card title="Custom Branding" icon="palette" href="/docs/branding">
+    Apply your brand colors and logos effortlessly.
+  </Card>
+</Columns>
+
+## Quick Start
+
+Get up and running in minutes.
+
+<Steps>
+  <Step title="Create Account" icon="user-plus">
+    Sign up at `https://app.martin-acero.com` with your email.
+  </Step>
+  <Step title="New Space" icon="plus">
+    Click "New Space" and name it for your project, like "API Docs".
+  </Step>
+  <Step title="Add Document" icon="file-plus">
+    Create your first `{introduction.mdx}` file with the frontmatter shown below.
+  </Step>
+  <Step title="Publish" icon="globe">
+    Preview and publish to share with your team.
+  </Step>
+</Steps>
+
+<CodeGroup tabs="JavaScript,Python">
+  ```javascript
+  // Example API call to fetch docs
+  const response = await fetch('https://api.example.com/docs', {
+    headers: { Authorization: `Bearer ${YOUR_API_KEY}` }
+  });
+  const docs = await response.json();
+  console.log(docs);
+  ```
+  ```python
+  import requests
+  response = requests.get(
+      'https://api.example.com/docs',
+      headers={'Authorization': f'Bearer {YOUR_API_KEY}'}
+  )
+  docs = response.json()
+  print(docs)
+  ```
+</CodeGroup>
+
+## Navigation and Benefits
+
+Access core sections quickly:
+
+| Section | Description | Link |
+|---------|-------------|------|
+| Quickstart | Set up your first project | `/quickstart` |
+| Authentication | Secure your API access | `/authentication` |
+| Changelog | Latest updates and features | `/changelog` |
+
+You benefit from seamless search, version control, and export options like PDF or Markdown.
+
+<Tabs>
+  <Tab title="Team Use" icon="users">
+    Share spaces with role-based permissions for reviewers and editors.
+  </Tab>
+  <Tab title="Solo Use" icon="user">
+    Perfect for personal projects with unlimited storage.
+  </Tab>
+</Tabs>
+
+## Brand Guidelines
+
+Maintain consistency with your brand color `#3B82F6`.
+
+<Expandable title="Color Usage" default-open="true">
+  Use the primary blue (`#3B82F6`) for buttons and links. Pair with neutrals for text.
+
+  ```css
+  :root {
+    --brand-primary: #3B82F6;
+    --brand-text: #1F2937;
+  }
+
+  .button {
+    background-color: var(--brand-primary);
+    color: white;
+  }
+  ```
+</Expandable>
+
+<Callout kind="info">
+  Customize themes in your space settings to apply `#3B82F6` site-wide.
+</Callout>
+
+Explore more in [Quickstart](/quickstart).

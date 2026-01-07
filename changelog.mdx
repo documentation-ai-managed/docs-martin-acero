@@ -1,0 +1,120 @@
+---
+title: Changelog
+description: Track the latest updates and improvements to Martin Acero.
+---
+
+## Recent Updates
+
+Stay informed about the latest enhancements, bug fixes, and breaking changes in Martin Acero. You receive automatic notifications for major releases through your dashboard at `https://dashboard.example.com`.
+
+<Update label="2024-10-15" description="v1.2.0" tags={["feature", "bugfix"]}>
+
+## New Features
+
+- Added real-time collaboration for shared documentation spaces, allowing multiple users to edit simultaneously.
+- Introduced version history with diff views, so you can compare changes across revisions easily.
+
+## Improvements
+
+- Enhanced search functionality with fuzzy matching and full-text indexing for faster results.
+
+## Bug Fixes
+
+- Fixed authentication issues when using OAuth providers, resolving token refresh errors.
+- Corrected rendering glitches in Mermaid diagrams containing complex node labels.
+
+</Update>
+
+<Update label="2024-09-20" description="v1.1.0" tags={["feature", "improvement"]}>
+
+## New Features
+
+- Integrated custom themes using your brand color `#3B82F6`, with support for CSS variables.
+- Added export options for PDF and Markdown, preserving all formatting and components.
+
+## Improvements
+
+- Optimized page load times by 40% through lazy-loading of images and code blocks.
+- Improved mobile responsiveness for all documentation pages.
+
+</Update>
+
+<Update label="2024-08-10" description="v1.0.0" tags={["breaking", "feature"]}>
+
+## Initial Release
+
+- Core documentation management with MDX support, including all standard components like `<Callout>` and `<Steps>`.
+- Full-text search and tagging system for organizing project spaces.
+- API endpoints for programmatic access at `https://api.example.com/v1/docs`.
+
+## Breaking Changes
+
+- Migrated from v0.x config format; update your `martinacero.config.js` files.
+
+</Update>
+
+## Upgrade Instructions
+
+Follow these steps to upgrade Martin Acero to the latest version. Always back up your documentation spaces first.
+
+<Steps>
+  <Step title="Backup Your Data" icon="database">
+
+    Export your spaces via the dashboard:
+
+````bash
+curl -H "Authorization: Bearer YOUR_API_KEY" \
+  https://api.example.com/v1/spaces/export \
+  -o backup.zip
+````
+
+  </Step>
+  <Step title="Update Package" icon="package">
+
+    <Tabs>
+      <Tab title="npm" icon="package">
+````bash
+npm install martinacero@latest
+````
+      </Tab>
+      <Tab title="yarn" icon="package">
+````bash
+yarn add martinacero@latest
+````
+      </Tab>
+    </Tabs>
+
+  </Step>
+  <Step title="Restart Server" icon="refresh-cw">
+
+    Run `npm run dev` or restart your production server.
+
+  </Step>
+</Steps>
+
+<Callout kind="tip">
+  Check the [migration guide](/configuration#upgrading) for v1.2.0 specifics if you encounter config issues.
+</Callout>
+
+## Upcoming Changes
+
+Get a preview of what's coming next. These features are in active development.
+
+<Columns cols={2}>
+  <Card title="AI-Powered Editing" icon="bot" horizontal>
+    Automated content suggestions and grammar checks integrated into the editor.
+  </Card>
+  <Card title="Advanced Analytics" icon="bar-chart-3" horizontal>
+    Track page views, popular sections, and user engagement metrics.
+  </Card>
+</Columns>
+
+<Expandable title="Detailed Roadmap" default-open="false">
+
+| Milestone | Features | ETA |
+|-----------|----------|-----|
+| v1.3.0 | Webhook support, custom components | Q4 2024 |
+| v1.4.0 | Multi-language docs, i18n | Q1 2025 |
+| v2.0.0 | Full rewrite with React 19 | Q2 2025 |
+
+</Expandable>

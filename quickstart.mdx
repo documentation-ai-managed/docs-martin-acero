@@ -1,0 +1,144 @@
+---
+title: Getting Started with Martin Acero
+description: Set up your account and create your first documentation space in minutes.
+---
+
+## Prerequisites
+
+Before starting, ensure you have:
+
+- A modern web browser (Chrome, Firefox, or Safari)
+- An email address for account verification
+- Internet connection
+
+<Callout kind="info">
+
+Martin Acero is a cloud-based platform. No local installation required.
+
+</Callout>
+
+## Create Your Account
+
+Sign up in under 2 minutes.
+
+<Steps>
+  <Step title="Visit the Dashboard" icon="monitor">
+    Go to `https://dashboard.martin-acero.com` and click **Sign Up**.
+  </Step>
+  <Step title="Enter Details" icon="user">
+    Provide your email, name, and a strong password. Accept the terms.
+  </Step>
+  <Step title="Verify Email" icon="mail">
+    Check your inbox for the verification link and click it.
+  </Step>
+  <Step title="Log In" icon="log-in">
+    Return to the dashboard, enter your credentials, and access your account.
+  </Step>
+</Steps>
+
+## Create Your First Documentation Project
+
+Once logged in, create a new space for your project docs.
+
+<Steps>
+  <Step title="New Project" icon="plus">
+    Click **New Space** in the sidebar.
+  </Step>
+  <Step title="Configure Space" icon="settings">
+    Enter a name like `My Project Docs`, select visibility (`Public` or `Private`), and choose a slug (e.g., `my-project`).
+  </Step>
+  <Step title="Generate Initial Pages" icon="file-text">
+    Martin Acero auto-creates `introduction.mdx`, `quickstart.mdx`, and `changelog.mdx`. Customize them next.
+  </Step>
+</Steps>
+
+## Basic Interface Tour
+
+Familiarize yourself with the key areas.
+
+<Columns cols={3}>
+  <Card title="Editor" icon="edit-3" href="#editor-section">
+    Write MDX content with live preview and syntax highlighting.
+  </Card>
+  <Card title="File Tree" icon="git-branch" href="#files-section">
+    Navigate pages, folders, and assets easily.
+  </Card>
+  <Card title="Publish" icon="globe" href="#publish-section">
+    Deploy changes with one click to a custom domain.
+  </Card>
+</Columns>
+
+## Set Up Initial Content
+
+Edit `quickstart.mdx` to add your first custom content.
+
+<Tabs>
+  <Tab title="Add a Heading" icon="type">
+    ```
+
+    ## Welcome
+
+    Start writing your docs here.
+
+    ```
+  </Tab>
+  <Tab title="Insert Code Example" icon="code">
+    ```
+
+    ```javascript
+    console.log("Hello, Martin Acero!");
+    ```
+
+  </Tab>
+  <Tab title="Callout Component" icon="info">
+    ```
+
+    <Callout kind="success">
+
+    Your first component!
+
+    </Callout>
+
+    ```
+  </Tab>
+</Tabs>
+
+<CodeGroup tabs="MDX,Preview">
+  ```mdx
+  ## Quickstart Complete
+
+  You've set up your space!
+
+  <Image
+    src="https://example.com/screenshot-dashboard.png"
+    alt="Martin Acero dashboard"
+    width="800"
+    height="500"
+  />
+  ```
+  ```markdown
+  ## Quickstart Complete (Rendered)
+
+  You've set up your space!
+
+  [Screenshot of dashboard]
+  ```
+</CodeGroup>
+
+## Next Steps
+
+<Expandable title="Explore Advanced Features" default-open="false">
+
+Dive deeper:
+
+- Customize themes with brand color `#3B82F6`
+- Integrate custom domains
+- Collaborate with team invites
+
+</Expandable>
+
+<Callout kind="tip">
+
+Ready for more? Check [Introduction](/introduction), [Authentication](/authentication), or [Changelog](/changelog).
+
+</Callout>
